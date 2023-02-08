@@ -11,7 +11,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-@media handheld{
+@media only screen and (max-width: 414px){
     :root{
         padding-left: 5%;
         padding-right: 5%;
