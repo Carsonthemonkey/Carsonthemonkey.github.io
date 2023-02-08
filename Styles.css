@@ -11,6 +11,13 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+@media handheld{
+    :root{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
 a{
     color: aqua;
     margin-top: 25px;
