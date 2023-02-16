@@ -11,12 +11,50 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-a{
+.contact{
     color: aqua;
     margin-top: 25px;
     display: flex;
     text-align: center;
     justify-content:center;
+}
+
+a{
+    color: aqua;
+    text-decoration: none;
+}
+/*modified button from https://copy-paste-css.com/*/
+.contact-button{
+    font-family: 'Courier New', Courier, monospace;
+    outline: 0;
+    grid-gap: 8px;
+    align-items: center;
+    background-color:  aquamarine;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 24px;
+    gap: 8px;
+    justify-content: center;
+    line-height: 1.5;
+    overflow: hidden;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+
+.contact-button:hover {
+    background-color: aqua;
+    box-shadow: 4px 4px 0 rgb(240, 240, 240);
+    transform: translate(-4px,-4px);
+}
+.contact-button :focus-visible{
+    outline-offset: 1px;
 }
 
 img {
@@ -28,7 +66,10 @@ img {
     object-fit: cover;
 }
 
+.centered{
+    text-align: center;
 
+}
 
 div.image-grid{
     grid-template-columns: repeat(3, 1fr);
@@ -56,7 +97,7 @@ img.grid-img:hover{
 
 p {
     margin-bottom: 100px;
-    display: flex;
+    /* display: flex; */
     color:rgb(240, 240, 240);
     font-family: 'Courier New', Courier, monospace;
     text-align: left;
@@ -144,4 +185,45 @@ h1 {
         padding-left: 5%;
         padding-right: 5%;
     }
+}
+
+
+/* CSS */
+/*
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 4px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #4cc0ff;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+*/
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
 }
