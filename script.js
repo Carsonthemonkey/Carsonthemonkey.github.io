@@ -8,6 +8,9 @@ function domLoadedHandler(){
     for(let image of imageGrid){
         image.addEventListener('mouseover', animateGif);
         image.addEventListener('mouseout', stopGif);
+        let loadImage = new Image();
+        let sourceLen = image.src.length;
+        loadImage.src = (image.src).substring(0, sourceLen - 4) + ".gif";
     }
 }
 
