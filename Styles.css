@@ -3,6 +3,7 @@
 
 :root{
     --image-rounding: 15px;
+    --section-padding: 90px;
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 25px;
@@ -15,13 +16,19 @@
     color: aqua;
     margin-top: 25px;
     display: flex;
-    text-align: center;
     justify-content:center;
 }
 
 a{
     color: aqua;
     text-decoration: none;
+}
+
+.links{
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 /*modified button from https://copy-paste-css.com/*/
 .contact-button{
@@ -96,7 +103,7 @@ img.grid-img:hover{
 
 
 p {
-    margin-bottom: 100px;
+    margin-bottom: var(--section-padding);
     /* display: flex; */
     color:rgb(240, 240, 240);
     font-family: 'Courier New', Courier, monospace;
@@ -116,8 +123,6 @@ p {
 }
 h2{
     margin-top: 7px;
-    /* border-bottom: 1px solid white; */
-    
 }
 
 h2::after{
@@ -132,7 +137,7 @@ h1 {
     font-family: 'Source Code Pro', monospace;
     color:aquamarine;
     margin-bottom: 0px;
-    margin-top: 50px;
+    margin-top: var(--section-padding);
 }
 
 .image-grid-element .caption{
@@ -187,6 +192,20 @@ h1 {
     }
 }
 
+.icon-buttons{
+    font-size: 45px;
+    padding-top: 50px;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+    gap: 70px;
+    justify-content: space-around;
+}
+
+.icon-button:hover {
+    color:aquamarine;
+    transform: translate(0px,-4px);
+}
 
 /* CSS */
 /*
